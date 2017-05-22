@@ -15,3 +15,8 @@ The simplest way to make a web-server: register a handler function and listen on
  
     http.HandleFunc("/", home)
     http.ListenAndServe(":8000", nil)
+
+## Step 03. Add tests
+
+`TestHandler` function (see `handlers_test.go`) is the simplest way to test our web-server: check if the handler
+returns expected result. Use `go test -v` command to run test.
