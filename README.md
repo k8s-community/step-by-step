@@ -20,3 +20,13 @@ The simplest way to make a web-server: register a handler function and listen on
 
 `TestHandler` function (see `handlers_test.go`) is the simplest way to test our web-server: check if the handler
 returns expected result. Use `go test -v` command to run test.
+
+## Step 04. Add router
+
+We need to be able to process diffrenet HTTP methods and URLs. 
+So, let's use [takama/router](https://github.com/takama/router) instead of standard handler registrar.
+
+You can try any other router. 
+For example, one of the most popular solutions is [julienschmidt/httprouter](https://github.com/julienschmidt/httprouter).
+
+Don't forget to check if tests are still green (`go test -v`) and change them if it is necessary.
