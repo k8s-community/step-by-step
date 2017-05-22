@@ -2,10 +2,11 @@ package main
 
 import (
 	"fmt"
-	"net/http"
+
+	"github.com/takama/router"
 )
 
 // home returns the path of current request
-func home(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "Processing URL %s...", r.URL.Path)
+func home(c *router.Control) {
+	fmt.Fprintf(c.Writer, "Processing URL %s...", c.Request.URL.Path)
 }
