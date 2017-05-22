@@ -30,3 +30,7 @@ You can try any other router.
 For example, one of the most popular solutions is [julienschmidt/httprouter](https://github.com/julienschmidt/httprouter).
 
 Don't forget to check if tests are still green (`go test -v`) and change them if it is necessary.
+
+## Step 05. Add logger
+
+Add logger ([Sirupsen/logrus](https://github.com/Sirupsen/logrus) is my favourite!) to log requests.
