@@ -67,3 +67,6 @@ Run service on Docker:
 
     docker run -p 8000:8000 step-by-step 
 
+## Step 09. Add information about current build
+
+It might be very helpful to know, what the current version of build is.
