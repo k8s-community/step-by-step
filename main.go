@@ -1,9 +1,10 @@
 package main
 
 import (
+	"os"
+
 	"github.com/Sirupsen/logrus"
 	"github.com/takama/router"
-	"os"
 )
 
 var log = logrus.New()
