@@ -33,4 +33,13 @@ Don't forget to check if tests are still green (`go test -v`) and change them if
 
 ## Step 05. Add logger
 
-Add logger ([Sirupsen/logrus](https://github.com/Sirupsen/logrus) is my favourite!) to log requests.
+Add logger to log requests. [Sirupsen/logrus](https://github.com/Sirupsen/logrus) is my favourite!
+
+## Step 06. Add dependency management
+
+For this workshop we choose [glide](https://glide.sh). 
+After installation of glide run `glide init` to initialize dependency management and `glide install` to install
+dependencies. Feel free to use `glide up` to check for dependencies updates.
+
+In this example we ignore `vendor` directory and `glide.lock` file. But in real "production" cases it's
+better to commit `vendor` or at least `glide.lock` to be able to reach dependencies in an emergency situation.
