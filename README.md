@@ -48,3 +48,22 @@ better to commit `vendor` or at least `glide.lock` to be able to reach dependenc
 
 It's very important to store service configuration in the environment.
 So, ENV variables is, probably, the simplest way to deal with config.
+
+## Step 08. Run service in Docker
+
+We believe what Dockerfile of any application must be as tiny as it possible.
+For simple services like this one, we can use `FROM scratch` construction and provide
+very tiny Docker image.
+
+Let's compile our service with special tags: 
+
+    env CGO_ENABLED=0 GOOS=linux go build
+
+and make a container with the binary:
+
+    docker build -t step-by-step -f ./Dockerfile .
+    
+Run service on Docker:
+
+    docker run -p 8000:8000 step-by-step 
+
