@@ -43,3 +43,8 @@ dependencies. Feel free to use `glide up` to check for dependencies updates.
 
 In this example we ignore `vendor` directory and `glide.lock` file. But in real "production" cases it's
 better to commit `vendor` or at least `glide.lock` to be able to reach dependencies in an emergency situation.
+
+## Step 07. Get service configuration from ENV
+
+It's very important to store service configuration in the environment.
+So, ENV variables is, probably, the simplest way to deal with config.
