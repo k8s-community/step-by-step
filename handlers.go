@@ -3,12 +3,13 @@ package main
 import (
 	"fmt"
 
+	"github.com/k8s-community/step-by-step/version"
 	"github.com/takama/router"
 )
 
 // home returns the path of current request
 func home(c *router.Control) {
-	fmt.Fprintf(c.Writer, "Processing URL %s...", c.Request.URL.Path)
+	fmt.Fprintf(c.Writer, "Repo: %s, Commit: %s, Version: %s", version.REPO, version.COMMIT, version.RELEASE)
 }
 
 // logger provides a log of requests
