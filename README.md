@@ -70,3 +70,15 @@ Run service on Docker:
 ## Step 09. Add information about current build
 
 It might be very helpful to know, what the current version of build is.
+
+## Step 09. Liveness and readiness probes (healthchecks)
+
+Liveness and readiness probes will help us to manage containers.
+
+Liveness probe is more like typical healthcheck.
+If liveness probe fails, Kubernetes will destroy and deploy again the failed container.
+
+Readiness probe shows that application is ready to receive connections.
+For example, during the initialization readiness probe may show what
+the instance of application is not ready for traffic yet, so Kubernetes will not send
+requests to this instance.
