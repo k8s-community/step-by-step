@@ -71,7 +71,7 @@ Run service on Docker:
 
 It might be very helpful to know, what the current version of build is.
 
-## Step 09. Liveness and readiness probes (healthchecks)
+## Step 10. Liveness and readiness probes (healthchecks)
 
 Liveness and readiness probes will help us to manage containers.
 
