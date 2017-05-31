@@ -4,3 +4,5 @@ import:
   version: v0.11.5
 - package: github.com/takama/router
   version: 0.6.3
+- package: github.com/k8s-community/handlers
+  version: 0.0.1
