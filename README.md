@@ -82,3 +82,6 @@ Readiness probe shows that application is ready to receive connections.
 For example, during the initialization readiness probe may show what
 the instance of application is not ready for traffic yet, so Kubernetes will not send
 requests to this instance.
+
+## Step 11. Graceful shutdown
+
