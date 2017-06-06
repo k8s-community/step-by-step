@@ -7,3 +7,4 @@ import:
 - package: github.com/k8s-community/handlers
   version: 0.0.1
 - package: github.com/k8s-community/utils/shutdown
+  version: 0.0.1

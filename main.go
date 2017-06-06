@@ -33,11 +33,11 @@ func main() {
 		c.Code(http.StatusOK).Body(http.StatusText(http.StatusOK))
 	})
 
+	go r.Listen("0.0.0.0:" + port)
+
 	logger := log.WithField("event", "shutdown")
 	sdHandler := shutdown.NewHandler(logger)
 	sdHandler.RegisterShutdown(sd)
-
-	r.Listen("0.0.0.0:" + port)
 }
 
 // sd does graceful dhutdown of the service
