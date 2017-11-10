@@ -85,3 +85,16 @@ requests to this instance.
 
 ## Step 11. Graceful shutdown
 
+Stop the service correctly.
+
+## Step 12. Makefile
+
+Add some commands for the common operations.
+
+## Step 13. Release configuration
+
+We will release our service with Helm, so let's write some charts.
+
+## Step 14. Release
+
+Now we are ready to release our application and check the results.
